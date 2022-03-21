@@ -16,9 +16,6 @@ video {
     object-fit: cover;
 }
 
-audio {
-    margin-top: 170px;
-}
 
 .container {
     position: relative;
