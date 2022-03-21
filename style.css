@@ -1,7 +1,10 @@
 body {
-    height: 100%;
-    background-image: ;
+    font-family:Arial, Helvetica, sans-serif;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 video {
@@ -13,16 +16,53 @@ video {
     object-fit: cover;
 }
 
-.ask {
+.container {
     position: relative;
     height: 100vh;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    background-color: rgba(249,208,222, 0.5);
+    width: 750px;
+    height: 400px;
+    margin-top: 150px;
+    border-radius: 20px;
 }
-
 .ques {
     font-size: 40px;
-    color: ;
+    color: red;
+}
+
+.btn {
+    width: 130px;
+    height: 50px;
+    margin: 50px;
+    border-color: pink;
+    background-color: #ff5555;
+    font-size: 20px;
+    color: #faeceb;
+    border-radius: 30px;
+}
+
+.yesBtn {
+    position: absolute;
+    left: 130px
+}
+
+.noBtn {
+    position: absolute;
+    transition: 0.3s;
+}
+
+.agree,.thanks {
+    display: none;
+}
+
+.copyright {
+    position:fixed;
+    left: 10px;
+    top: 710px;
+    font-size: 10px;
 }
